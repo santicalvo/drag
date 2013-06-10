@@ -1,0 +1,142 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv='content-type' content='text/html; charset=utf-8'>
+		<meta name='keywords' content='e-learning'>
+		<meta name='description' content='cursos on-line'>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+		<title id='winTi'>Articles</title>
+		<!--<link rel='stylesheet' type='text/css' href='../estructura_fija/estilos/cg_parla.css' /> -->
+
+		<link rel="stylesheet" href="http://code.jquery.com/mobile/1.3.1/jquery.mobile-1.3.1.min.css" />
+		<link rel="stylesheet" type="text/css" href="css/main.css" />
+		<link rel="stylesheet" type="text/css" href="css/arrastre.css" />
+		<link rel="stylesheet" type="text/css" href="css/right_panel.css" />
+		<!-- <link rel="stylesheet" type="text/css" href="../estructura_fija/estilos/ejercicioArrastrar.css" /> -->
+		<script type='text/javascript' src='libs/jquery/jquery-1.9.1.min.js'></script>
+		<script type="text/javascript" src="libs/jquery/jquery-ui-1.9.2.custom.js"></script>
+		<script type="text/javascript" src="libs/jquery/mobile/jquery.mobile-1.3.1.min.js"></script>
+		<script type="text/javascript" src="libs/jquery/plugins/jquery.hittest.js"></script>
+		<script type="text/javascript" src="libs/jquery/plugins/jquery.matchHeights.js"></script>
+		<script type="text/javascript" src="libs/jquery/plugins/jquery.ui.touch-punch.js"></script>
+		<script type="text/javascript" src="libs/controls/media.js"></script>
+		<script type="text/javascript" src="libs/controls/controles.js"></script>
+		<script type="text/javascript" src="libs/exercises/botones.js"></script>
+		<!--[if lt IE 9]>
+		<script src="../dist/html5shiv.js"></script>
+		<![endif]-->
+
+	</head>
+	<body>
+		<!-- jquery mobile template structure -->
+		<div data-role="page">
+			<!-- sliding panel 
+			<div data-role="panel" id="right-panel" data-display="overlay" data-position="right" data-theme="c">
+				<img src="img/comprobar.png" alt="Comprobar" title="Comprobar" id="bot_comprobar"/>
+				<img src="img/borrar.png" alt="Borrar" title="Borrar" id="bot_borrar"/>
+			</div>
+			-->
+			<!-- /panel
+			<div id="panel_opener">
+				<a href="#right-panel">Open panel</a>
+			</div>
+			 -->
+			<!-- end sliding panel -->
+			<header id='cabecera' class='marco standard'>
+				<p id='titulo'>
+					<strong>Saps si cal l'article personal en aquestes frases? Saps quina forma és l'adequada? Prova de descobrir-ho.</strong>
+				</p>
+				<p id='subtitulo'>
+					Arrossega l'article o el signe d'absència d'article (-) als buits de les frases següents. Si ho fas bé podràs sentir les frases completes.
+				</p>
+			</header>
+			<article id="content" class="marco standard">
+
+				<figure>
+					<img src='img/grupo1.png' alt='dibujo'>
+					<img src='img/grupo2.png' alt='dibujo'>
+					<img src='img/grupo3.png' alt='dibujo'>
+				</figure>
+
+				<section class="standard">
+					<div id='uno' class="exitem">
+						<img src='img/butt_audio_a.png' border='0' class='bAudio' id='bAudio_1' alt='audio uno' />
+						Em dic
+						<span class='zonaVacia ui-droppable' id='zona_1'>***</span> Gabriel
+					</div>
+
+					<div id='dos'  class="exitem">
+						<img src='img/butt_audio_a.png' border='0' class='bAudio' id='bAudio_2' alt='audio dos' />
+						<span>Hola! Sóc</span>
+						<span class='zonaVacia ui-droppable' id='zona_2'>***</span>
+						<span>Marta</span>
+					</div>
+
+					<div id='tres' class="exitem">
+						<img src='img/butt_audio_a.png' border='0' class='bAudio' id='bAudio_3' alt='audio tres' />
+						<span>Hola, bona tarda! Sóc</span>
+						<span class='zonaVacia ui-droppable' id='zona_3'>***</span>
+						<span>Enric</span>
+					</div>
+
+					<div id='cuatro' class="exitem">
+						<img src='img/butt_audio_a.png' border='0' class='bAudio' id='bAudio_4' alt='audio cuatro' />
+						<span>Bon dia! Som</span>
+						<span class='zonaVacia ui-droppable' id='zona_4'>***</span>
+						<span>Xavier i l'Hermínia.</span>
+						
+					</div>
+
+				</section>
+
+				<div id='fondoPastillas'>
+					<div class='pastilla ui-draggable' id='opcion_1'>
+						la
+					</div>
+					<div class='pastilla ui-draggable min' id='opcion_2'>
+						en/el
+					</div>
+					<div class='pastilla ui-draggable' id='opcion_3'>
+						l'
+					</div>
+					<div class='pastilla ui-draggable' id='opcion_4'>
+						-
+					</div>
+				</div>
+				
+		    <div id="bots_comprobacion">
+                <img src="img/comprobar.png" alt="Comprobar" title="Comprova" id="bot_comprobar"/>
+                <img src="img/borrar.png" alt="Borrar" title="Esborra" id="bot_borrar"/>
+            </div>
+			</article>
+
+			<div id="audios">
+				<audio id='audio_1'>
+				    <source src="media/audio/audio_1.ogg" type="audio/ogg"/>
+				    <source src="media/audio/audio_1.mp3" type="audio/mpeg"/>
+				    
+				</audio>
+				
+				<audio id='audio_2'>
+					<source src="media/audio/audio_2.ogg" type="audio/ogg"/>
+					<source src="media/audio/audio_2.mp3" type="audio/mpeg"/>
+				</audio>
+				
+				<audio id='audio_3'>
+					<source src="media/audio/audio_3.ogg" type="audio/ogg"/>
+					<source src="media/audio/audio_3.mp3"  type="audio/mpeg"/>
+				</audio>
+				<audio id='audio_4'>
+					<source src="media/audio/audio_4.ogg" type="audio/ogg"/>
+					<source src="media/audio/audio_4.mp3"  type="audio/mpeg"/>
+				</audio>
+				<!--<audio id='audio_5'>
+					<source src="media/audio/audio5.ogg" type="audio/ogg"/>
+					<source src="media/audio/audio5.mp3" />
+				</audio>
+				-->
+			</div>
+		</div>
+	</body>
+</html>
